@@ -22,7 +22,9 @@ export class Satellite {
 		}
 		
    }
-
+   zebraStripe(even): boolean {
+	return even.indexOf(this) % 2 === 0 && this.type !== 'Space Debris';
+   }
 }
 
 // TODO 3a: fix isSpaceDebris check
